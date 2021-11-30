@@ -1,0 +1,153 @@
+h1 {
+    font-family: 'Reenie Beanie', cursive;
+}
+h2 {
+    font-family: 'Reenie Beanie', cursive;
+}
+h4 {
+    font-family: 'Reenie Beanie', cursive;
+}
+body {
+    margin: 0;
+}
+
+#navbar-all {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#navbar {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-right: 20px;
+}
+
+.navbar-item {
+    margin: 20px;
+    cursor: pointer;
+    font-family: 'Reenie Beanie', cursive;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+#title {
+    color: black;
+    font-size: 45px;
+}
+
+#starter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.centerstuff {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#score {
+    font-size: 50px;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#play {
+    color: black;
+}
+
+#play:hover {
+    color: purple;
+    cursor: pointer;
+}
+
+h4:hover {
+    color: purple;
+    cursor: pointer;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.square:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+#game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+#sq1 {
+    background: pink;
+}
+#sq2 {
+    background: rgb(130, 226, 130);
+}
+#sq3 {
+    background: rgb(201, 165, 224);
+}
+#sq4 {
+    background: rgb(157, 157, 228);
+}
+
+#sq1:active {
+    background: rgb(241, 182, 193);
+}
+#sq2:active {
+    background: rgb(126, 218, 126);
+}
+#sq3:active {
+    background: rgb(189, 155, 211);
+}
+#sq4:active {
+    background: rgb(147, 147, 214);
+}
+
+@keyframes highlight {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+.glow {
+    animation-name: highlight;
+    animation-duration: 0.75s;
+}
+
+#reset:hover {
+    color: purple;
+    cursor: pointer;
+}
+
+
