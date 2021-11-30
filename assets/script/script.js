@@ -1,10 +1,3 @@
-console.log("rep");
-if (document.querySelector("body").classList.contains("dark")) {
-    document.getElementById("darkmode").innerHTML = "dark mode";
-    console.log("te");
-} else {
-    document.getElementById("darkmode").innerHTML = "light mode";
-}
 let seq = [];
 let next = 0;
 let chosen = 0;
@@ -174,8 +167,20 @@ document.getElementById("darkmode").onclick = darkmode;
 function darkmode() {
     document.querySelector("body").classList.toggle("dark");
     if (document.querySelector("body").classList.contains("dark")) {
-        document.getElementById("darkmode").innerHTML = "dark mode";
-    } else {
         document.getElementById("darkmode").innerHTML = "light mode";
+    } else {
+        document.getElementById("darkmode").innerHTML = "dark mode";
     }
+}
+
+// scroll down
+document.getElementById("htp").onclick = scroll;
+function scroll() {
+    document.getElementById("howtoplay").scrollIntoView({behavior: "smooth"});
+}
+
+// back to top
+document.getElementById("back").onclick = backtotop;
+function backtotop() {
+    document.getElementById("navbar-all").scrollIntoView({behavior: "smooth"});
 }

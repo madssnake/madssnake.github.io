@@ -2,14 +2,19 @@ body {
     background:rgb(255, 255, 255);
     margin: 0;
 }
-h1 {
+h1, h2, h4 {
     font-family: 'Reenie Beanie', cursive;
+    color: black;
 }
-h2 {
-    font-family: 'Reenie Beanie', cursive;
+
+p {
+    font-family: 'Palanquin', sans-serif;
+    color: black;
+    font-size: 24px;
 }
-h4 {
-    font-family: 'Reenie Beanie', cursive;
+
+#toppage {
+    height: 100vh;
 }
 
 #navbar-all {
@@ -45,10 +50,16 @@ h4 {
 
 #logo {
     margin-left: 15px;
+    color: black;
+    margin: 20px;
+    cursor: pointer;
+    font-family: 'Reenie Beanie', cursive;
+    text-decoration: none;
+    font-size: 30px;
 }
 
 .navbar-item:hover {
-    color:rgb(157, 157, 228);
+    color: rgb(150, 97, 185);
 }
 
 #logo {
@@ -58,7 +69,7 @@ h4 {
 }
 
 
-#title {
+.title {
     color: black;
     font-size: 45px;
     margin-top: 50px;
@@ -83,7 +94,7 @@ h4 {
 }
 
 #high {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .button:hover {
@@ -93,15 +104,16 @@ h4 {
 
 #play {
     color: black;
+    font-size: 40px;
 }
 
 #play:hover {
-    color: rgb(157, 157, 228);
+    color: rgb(150, 97, 185);
     cursor: pointer;
 }
 
 h4:hover {
-    color: rgb(157, 157, 228);
+    color: rgb(150, 97, 185);
     cursor: pointer;
 }
 
@@ -167,41 +179,100 @@ h4:hover {
 }
 
 #reset:hover {
-    color: rgb(157, 157, 228);
+    color: rgb(150, 97, 185);
+    cursor: pointer;
+}
+
+#howtoplay {
+    background: rgb(189, 155, 211);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-bottom: 0px;
+    height: 100vh;
+}
+
+#howtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    /* margin-top: 80px; */
+}
+
+.inst {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+}
+
+#back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#back:hover {
+    color: rgb(109, 109, 109);
     cursor: pointer;
 }
 
 
 /* dark mode stuff */
 .dark {
-    background:#38363f;
+    background:#313135;
 }
 
-.dark h1 {
-    color: #AA4499;
+.dark h1{
+    color: #735290;
 }
 .dark h2 {
-    color: #AA4499;
+    color: #735290;
 }
 .dark h4 {
-    color: #AA4499;
+    color: #735290;
 }
 .dark .navbar-item {
-    color: #AA4499;
+    color: #735290;
 }
 .dark .navbar-item:hover {
-    color: #44AA99;
+    color: #98A886;
 }
 
-.dark #play {
-    color: #AA4499;
+.dark #play{
+    color: #98A886;
+
 }
 .dark #title {
-    color: #AA4499;
+    color: #735290;
 }
 
+.dark p {
+    color: #735290;
+}
+
+.dark #logo {
+    color: #98A886;
+}
+
+.dark #play:hover {
+    color: #735290;
+}
 .dark #reset:hover {
-    color: #44AA99;
+    color: #98A886;
+}
+
+.dark #howtoplay {
+    background: gray;
 }
 
 .dark #sq1 {
@@ -221,14 +292,36 @@ h4:hover {
     background: #c3aba3;
 }
 .dark #sq2:active {
-    background: rgb(102, 207, 190);
+    background: #92a082;
 }
 .dark #sq3:active {
     background: #7b5a97;
 }
 .dark #sq4:active {
-    background: rgb(31, 134, 65);
+    background: #4f6674;
 }
+
+.dark #howtoplay {
+    background: #344a57;
+}
+
+.dark p {
+    color: #C4A69D;
+}
+
+.dark #howtitle {
+    color: #C4A69D;
+}
+
+.dark #back {
+    /* color: #C4A69D; */
+    color: #98A886;
+}
+
+.dark #back:hover {
+    color: #735290;
+}
+
 
 
 

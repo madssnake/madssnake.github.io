@@ -5,48 +5,61 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Palanquin&display=swap" rel="stylesheet">
         <title>the color game</title>
 	</head>
     <body>
-        <!-- navigation bar -->
-        <div id="navbar-all">
-            <div id="logo"><a class="navbar-item" href="index.html">the color game</a></div>
-            <div id="navbar">
-                <!-- <div class="navbar-item"><a class="navbar-item" href="index.html">play</a></div> -->
-                <div class="navbar-item"><a class="navbar-item" href="howtoplay.html">how to play</a></div>
-                <div class="navbar-item" id="darkmode">dark mode</div>
+        <div id="toppage">
+            <!-- navigation bar -->
+            <div id="navbar-all">
+                <div id="logo">the color game</a></div>
+                <div id="navbar">
+                    <!-- <div class="navbar-item"><a class="navbar-item" href="index.html">play</a></div> -->
+                    <div class="navbar-item" id="htp">how to play</a></div>
+                    <div class="navbar-item" id="darkmode">dark mode</div>
+                </div>
+            </div> 
+            <!--body  -->
+            <div id="starter">
+                <div class="centerstuff"><h1 class="title">welcome to the color game</h1></div>
+
+                <!-- click -->
+                <div id="game">
+                    <div class="square" id="sq1"></div>
+                    <div class="square" id="sq2"></div>
+                    <div class="square" id="sq3"></div>
+                    <div class="square" id="sq4"></div>
+                </div>
+
+                <div class="centerstuff"><h2 id="play">start game</h2></div>
+
             </div>
-        </div> 
-         <!--body  -->
-        <div id="starter">
-            <div class="centerstuff"><h1 id="title">welcome to the color game</h1></div>
-
-            <!-- click -->
-            <div id="game">
-                <div class="square" id="sq1"></div>
-                <div class="square" id="sq2"></div>
-                <div class="square" id="sq3"></div>
-                <div class="square" id="sq4"></div>
-            </div>
-
-            <div class="centerstuff"><h2 id="play">start game</h2></div>
-
-        </div>
-    
-        <div id="cutline"></div>
-
-        <div>
-            <div id="leaderboard">
-                <div class="centerstuff"><h2 id="high">high score: </h2></div>
-                <div class="centerstuff"><h1 id="score">0</h1></div>
-                <div class="centerstuff"><h2 id="reset">reset high score</h2></div>
-            </div>
-        </div>
         
+            <div id="cutline"></div>
 
+            <div>
+                <div id="leaderboard">
+                    <div class="centerstuff"><h2 id="high">high score: </h2></div>
+                    <div class="centerstuff"><h1 id="score">0</h1></div>
+                    <div class="centerstuff"><h2 id="reset">reset high score</h2></div>
+                </div>
+            </div>
+        </div>
 
-        <!-- is a footer necessary? -->
-        <div id="footer"></div> 
+        <!-- how to play section -->
+        <div id="howtoplay">
+            <h1 class="title" id="howtitle">how to play</h1>
+            <p class="inst">welcome to the color game! </p>
+            <p class="inst">this game is a brain teaser; one that's designed to challenge your memory. </p>
+            <p class="inst"> once you press play, a color will randomly light up. you play your turn by clicking
+            the correct color that was chosen. each round, another square gets added to the 
+            sequence. it is your job to then repeat the sequence 
+            by clicking the squares in the correct order. you lose when you get the sequence incorrect.</p>
+            <p class="inst">you can also play the game in dark mode. enjoy!</p>
+            <h1 id="back">back to game</h1>
+
+        </div> 
+
     </body>
 <script src="assets/script/script.js"></script>
 </html>
