@@ -112,6 +112,11 @@ p {
     cursor: pointer;
 }
 
+#speed:hover {
+    color: rgb(150, 97, 185);
+    cursor: pointer;
+}
+
 h4:hover {
     color: rgb(150, 97, 185);
     cursor: pointer;
@@ -175,7 +180,7 @@ h4:hover {
 }
 .glow {
     animation-name: highlight;
-    animation-duration: 0.75s;
+    animation-duration: 0.6s;
 }
 
 #reset:hover {
@@ -198,7 +203,6 @@ h4:hover {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    /* margin-top: 80px; */
 }
 
 .inst {
@@ -242,10 +246,13 @@ h4:hover {
     color: #735290;
 }
 .dark .navbar-item {
-    color: #735290;
+    /* color: #735290; */
+    color: #98A886;
+
 }
 .dark .navbar-item:hover {
-    color: #98A886;
+    /* color: #98A886; */
+    color: #735290;
 }
 
 .dark #play{
@@ -314,8 +321,7 @@ h4:hover {
 }
 
 .dark #back {
-    /* color: #C4A69D; */
-    color: #98A886;
+    color: #C4A69D;
 }
 
 .dark #back:hover {

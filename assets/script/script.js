@@ -7,6 +7,8 @@ let clicks = 0;
 let highscore = 0;
 let currentscore = 0;
 let round = 0;
+let timeoutScale = 1200;
+
 let sq1 = document.getElementById("sq1");
 let sq2 = document.getElementById("sq2");
 let sq3 = document.getElementById("sq3");
@@ -21,7 +23,7 @@ function pickRandom() {
 function runSeq() {
     for (let i=0; i<seq.length; i++) {
         // change css to "glow", then not glow (run an animation)
-        let timeoutScale = 1000;
+
         if (seq[i] == 0) {
             setTimeout(function() {
                 sq1.classList.add('glow');
@@ -142,14 +144,8 @@ function updatehigh() {
     document.getElementById("score").innerHTML = String(highscore);
 }
 
-if (document.getElementById("play") != null) {
-    // button functionalities for main page
-    document.getElementById("play").onclick = testplay; 
-    document.getElementById("reset").onclick = resetScore;
-
-}
-
-
+document.getElementById("play").onclick = testplay; 
+document.getElementById("reset").onclick = resetScore;
 
 function showRounds() {
     document.getElementById("play").onclick = null;
@@ -183,4 +179,18 @@ function scroll() {
 document.getElementById("back").onclick = backtotop;
 function backtotop() {
     document.getElementById("navbar-all").scrollIntoView({behavior: "smooth"});
+}
+
+// speed button
+document.getElementById("speed").onclick = changeSpeed;
+
+function changeSpeed() {
+    let currentspeed = document.getElementById("speed").innerHTML;
+    if (currentspeed == "speed: regular") {
+        document.getElementById("speed").innerHTML = "speed: fast";
+        timeoutScale = 700;
+    } else {
+        document.getElementById("speed").innerHTML = "speed: regular";
+        timeoutScale = 1200;
+    }
 }
