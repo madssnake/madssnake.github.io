@@ -23,6 +23,7 @@ function pickRandom() {
 function runSeq() {
     for (let i=0; i<seq.length; i++) {
         // change css to "glow", then not glow (run an animation)
+        // i can't find the link, but sequential animation code is from stackoverflow
 
         if (seq[i] == 0) {
             setTimeout(function() {
