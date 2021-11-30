@@ -1,3 +1,7 @@
+body {
+    background:rgb(255, 255, 255);
+    margin: 0;
+}
 h1 {
     font-family: 'Reenie Beanie', cursive;
 }
@@ -6,9 +10,6 @@ h2 {
 }
 h4 {
     font-family: 'Reenie Beanie', cursive;
-}
-body {
-    margin: 0;
 }
 
 #navbar-all {
@@ -29,11 +30,25 @@ body {
 }
 
 .navbar-item {
+    color: black;
     margin: 20px;
     cursor: pointer;
     font-family: 'Reenie Beanie', cursive;
     text-decoration: none;
     font-size: 30px;
+}
+
+#darkmode {
+    width: 150px;
+    margin-right: 1px;
+}
+
+#logo {
+    margin-left: 15px;
+}
+
+.navbar-item:hover {
+    color:rgb(157, 157, 228);
 }
 
 #logo {
@@ -46,6 +61,7 @@ body {
 #title {
     color: black;
     font-size: 45px;
+    margin-top: 50px;
 }
 
 #starter {
@@ -63,6 +79,11 @@ body {
 
 #score {
     font-size: 50px;
+    margin: 1px;
+}
+
+#high {
+    margin-top: 40px;
 }
 
 .button:hover {
@@ -75,12 +96,12 @@ body {
 }
 
 #play:hover {
-    color: purple;
+    color: rgb(157, 157, 228);
     cursor: pointer;
 }
 
 h4:hover {
-    color: purple;
+    color: rgb(157, 157, 228);
     cursor: pointer;
 }
 
@@ -146,8 +167,69 @@ h4:hover {
 }
 
 #reset:hover {
-    color: purple;
+    color: rgb(157, 157, 228);
     cursor: pointer;
 }
+
+
+/* dark mode stuff */
+.dark {
+    background:#38363f;
+}
+
+.dark h1 {
+    color: #AA4499;
+}
+.dark h2 {
+    color: #AA4499;
+}
+.dark h4 {
+    color: #AA4499;
+}
+.dark .navbar-item {
+    color: #AA4499;
+}
+.dark .navbar-item:hover {
+    color: #44AA99;
+}
+
+.dark #play {
+    color: #AA4499;
+}
+.dark #title {
+    color: #AA4499;
+}
+
+.dark #reset:hover {
+    color: #44AA99;
+}
+
+.dark #sq1 {
+    background: #C4A69D;
+}
+.dark #sq2 {
+    background: #98A886;
+}
+.dark #sq3 {
+    background: #735290;
+}
+.dark #sq4 {
+    background: #465C69;
+}
+
+.dark #sq1:active {
+    background: #c3aba3;
+}
+.dark #sq2:active {
+    background: rgb(102, 207, 190);
+}
+.dark #sq3:active {
+    background: #7b5a97;
+}
+.dark #sq4:active {
+    background: rgb(31, 134, 65);
+}
+
+
 
 

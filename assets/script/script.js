@@ -1,4 +1,10 @@
-
+console.log("rep");
+if (document.querySelector("body").classList.contains("dark")) {
+    document.getElementById("darkmode").innerHTML = "dark mode";
+    console.log("te");
+} else {
+    document.getElementById("darkmode").innerHTML = "light mode";
+}
 let seq = [];
 let next = 0;
 let chosen = 0;
@@ -7,6 +13,7 @@ let response = [];
 let clicks = 0;
 let highscore = 0;
 let currentscore = 0;
+let round = 0;
 let sq1 = document.getElementById("sq1");
 let sq2 = document.getElementById("sq2");
 let sq3 = document.getElementById("sq3");
@@ -115,12 +122,16 @@ function endGame() {
     response = [];
     clicks = 0;
     updatehigh();
+    round = 0;
+    playbuttonback();
 }
 
 function testplay() {
     clicks = 0;
     gameRunning = true;
     response = [];
+    round++;
+    showRounds();
     pickRandom();
     runSeq();
     getResponse();
@@ -138,8 +149,33 @@ function updatehigh() {
     document.getElementById("score").innerHTML = String(highscore);
 }
 
-document.getElementById("play").onclick = testplay; 
-document.getElementById("reset").onclick = resetScore;
+if (document.getElementById("play") != null) {
+    // button functionalities for main page
+    document.getElementById("play").onclick = testplay; 
+    document.getElementById("reset").onclick = resetScore;
 
-// stuff to do: hide start game when it starts, add back when it's over
-// add a counter: which round you're on
+}
+
+
+
+function showRounds() {
+    document.getElementById("play").onclick = null;
+    document.getElementById("play").innerHTML = "round " + String(round);
+}
+
+function playbuttonback() {
+    document.getElementById("play").innerHTML = "start game";
+    document.getElementById("play").onclick = testplay; 
+}
+
+// dark mode toggler
+document.getElementById("darkmode").onclick = darkmode;
+
+function darkmode() {
+    document.querySelector("body").classList.toggle("dark");
+    if (document.querySelector("body").classList.contains("dark")) {
+        document.getElementById("darkmode").innerHTML = "dark mode";
+    } else {
+        document.getElementById("darkmode").innerHTML = "light mode";
+    }
+}
